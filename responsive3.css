@@ -1,0 +1,91 @@
+
+@media ((min-width: 1025px)) {
+    .cur-img{
+        width: 300px;
+        height: 250px;
+    }
+    .main-app{
+        padding: 20px 80px;
+    }
+    .song{
+        width: 500px;
+    }
+  }
+@media ((min-width: 961px) and (max-width: 1024px)) {
+    .main-app{
+        padding: 20px 50px;
+    }
+    .song{
+        width: 400px;
+        margin: 7px;
+    }
+    .column{
+        justify-content: center;
+    }
+  }
+
+@media (max-width: 960px) {
+    .song{
+        width: 100%;
+        margin: 7px 0;
+    }
+  }
+
+
+  @media ((min-width: 481px) and  (max-width : 767px)) {
+    .main-app{
+        padding: 20px 20px;
+    }
+    .song{
+        width: 100%;
+        margin: 7px 0;
+    }
+  }
+@media (max-width : 480px) {
+    .main-app{
+        padding: 10px 10px;
+    }
+    .cur-playing{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cur-img{
+        width: 80%;
+    }
+    .song{
+        width: 100%;
+        margin: 7px 0;
+    }
+}
+
+/* bộ phận di chuyển chuôtj */
+
+.clicker {
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+    background: #21ccc9;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(0);
+    opacity: .3;
+    -ms-filter: none;
+    filter: none;
+    z-index: 9999;
+    pointer-events: none
+}
+
+.darkMode .clicker {
+    background: #fff
+}
+
+.clicker.is-active {
+    opacity: 0;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    filter: alpha(opacity=0);
+    transition: opacity 900ms ease, transform 900ms ease;
+    transform: scale(1)
+}
+html,body{cursor:url(&quot;https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png&quot;), auto;}
+	a:hover{cursor:url(&quot;https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png&quot;), auto;}

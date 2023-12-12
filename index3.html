@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="responsive3.css">
+    <link rel="shortcut icon" href="acsset/icons8-headphones-100.png" type="image/x-icon">
+    <title>Âm nhạc là music !</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="loading" style="display: none;">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+        <div class="main-bg" >
+            <div class="main-bg-filter">
+            </div>
+            <div class="main">
+                <div class="main-app">
+                    <div class="tools-bar">
+                        <div class="theme-icon">
+                            <i class="fa-solid fa-paint-roller"></i>
+                        </div>
+                    </div>
+                    <div class="cur-playing">
+                    </div>
+                    <div class="track">
+                        <input type="range" name="playing" id="progress" value="0" min="0" step="1" max="1000">
+                        <div class="loader"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="curTime" ></span>
+                        <span class="sumTime" > </span>
+                    </div>
+                    <div class="control">
+                        <div class="nomal-control">
+                            <div class="item prev">
+                                <i class="fa-solid fa-backward-step"></i>
+                            </div>
+                            <div class="item play-pause">
+                                <i class="fa-solid fa-play btn-play"></i>
+                                <i class="fa-solid fa-pause btn-pause dp-none"></i>
+                            </div>
+                            <div class="item next">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </div>
+                        </div>
+                        <div class="advan-control">
+                            <i title="repeat" class="fa-solid fa-repeat btn repeat"></i>
+                            <i title="shuffle" class="fa-solid fa-shuffle btn shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="list-player">
+                        <div class="column">
+                        </div>
+                    </div>
+                </div>
+
+
+                
+               <button  id="btn-1" style="font-size: 30px; position: absolute; top: 96%; right: 13%;   --content: 'Next';">
+                <div class="left">
+                    
+                </div>
+                
+                Next
+                
+              <div class="right">
+                
+              </div>
+              
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+
+
+            </div>
+        </div>
+        <audio src="" id="audio"></audio>
+    </div>
+
+    <script src="app3.js"></script>
+    <script src="app3(1).js"></script>
+
+
+
+    <!-- bộ phận di chuyển chuột -->
+    <style>
+        html,body{cursor:url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;}
+        a:hover{cursor:url("https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png"), auto;}
+    </style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+   
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script>/*<![CDATA[*/ (function() {
+    var i = function(n, t) {
+            return window.setTimeout(t, n)
+        },
+        o = {
+            WebkitTransition: "webkitTransitionEnd",
+            MozTransition: "transitionend",
+            OTransition: "oTransitionEnd otransitionend",
+            msTransition: "MSTransitionEnd",
+            transition: "transitionend"
+        },
+        e = function(n, t) {
+            var i, o = "touchstart" === n.type.toLowerCase();
+            switch (t) {
+                case "top":
+                    i = "pageY";
+                    break;
+                case "left":
+                    i = "pageX"
+            }
+            return (o ? n.originalEvent.touches[0] : n)[i]
+        };
+    $(document).on("mousedown touchstart", function(n) {
+        var t = $('<div class="clicker"></div>');
+        return t.css({
+            left: e(n, "left"),
+            top: e(n, "top")
+        }), $("body").append(t), i(0, function() {
+            return t.on(o[Modernizr.prefixed("transition")], function() {
+                return t.remove()
+            }), t.addClass("is-active")
+        })
+    })
+}).call(this); /*]]>*/</script>
+
+<script> 
+
+
+document.getElementById("btn-1").addEventListener("click", function() {
+    window.location.href = "the-end/index.html"; //cho link html vào đây
+});
+</script>
+</body>
+</html>

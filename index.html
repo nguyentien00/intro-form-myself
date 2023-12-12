@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form đăng nhập và đăng kí </title>
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio src="acsset/y2mate.com - HÀNH LANG CŨ  LONG NÓN LÁ  Lofi And Chilllofi lofimusic tiktok tiktokvideo Hồ Gia Huy NVQ.mp3"autoplay>
+  </audio>
+  
+ 
+  <div class="container" id="container">
+    <div class="form-container register-container">
+        <form action="#">
+        <h1>Register here</h1>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <a href="#"><button>Register</button></a>
+        <span>or use your account</span>
+        <div class="social-container">
+          <a href="https://www.facebook.com/profile.php?id=100023989994527" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="https://github.com/nguyentien00" class="social"><i class="fab fa-github"></i></a>
+          <a href="https://www.tiktok.com/@userwp6wj3toz9" class="social"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-container login-container">
+      <form action="#">
+        <h1>Login here</h1>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Remember me</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <button ><a href="index1.html" style="color:#fff;">Login </a></button>
+        <span>or use your account</span>
+        <div class="social-container">
+          <a href="https://www.facebook.com/profile.php?id=100023989994527" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="https://github.com/nguyentien00" class="social"><i class="fab fa-github"></i></a>
+          <a href="https://www.tiktok.com/@userwp6wj3toz9" class="social"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Hello <br> friends</h1>
+          <p>if Yout have an account, login here and have fun</p>
+          <button class="ghost" id="login">Login
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Start yout <br> journy now</h1>
+          <p>if you don't have an account yet, join us and start your journey.</p>
+          <button class="ghost" id="register">Register
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="font-size: 20px; font-family:unset ; color:#ffffff;text-shadow:5px 4px 3px rgba(33, 24, 24, 0.7);" >* Lưu ý:Vui lòng đăng ký sau khi đăng nhập</p>
+
+
+
+    <!-- phần chuột cursor -->
+    <style>
+      html,body{cursor:url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;}
+      a:hover{cursor:url("https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png"), auto;}
+    </style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script>/*<![CDATA[*/ (function() {
+    var i = function(n, t) {
+          return window.setTimeout(t, n)
+      },
+      o = {
+          WebkitTransition: "webkitTransitionEnd",
+          MozTransition: "transitionend",
+          OTransition: "oTransitionEnd otransitionend",
+          msTransition: "MSTransitionEnd",
+          transition: "transitionend"
+      },
+      e = function(n, t) {
+          var i, o = "touchstart" === n.type.toLowerCase();
+          switch (t) {
+              case "top":
+                  i = "pageY";
+                  break;
+              case "left":
+                  i = "pageX"
+          }
+          return (o ? n.originalEvent.touches[0] : n)[i]
+      };
+    $(document).on("mousedown touchstart", function(n) {
+      var t = $('<div class="clicker"></div>');
+      return t.css({
+          left: e(n, "left"),
+          top: e(n, "top")
+      }), $("body").append(t), i(0, function() {
+          return t.on(o[Modernizr.prefixed("transition")], function() {
+              return t.remove()
+          }), t.addClass("is-active")
+      })
+    })
+    }).call(this); /*]]>*/</script>
+
+  
+
+  <script>
+    const registerButton = document.getElementById("register");
+const loginButton = document.getElementById("login");
+const container = document.getElementById("container");
+
+
+registerButton.addEventListener("click", () => {
+  container.classList.add("right-panel-active");
+});
+
+loginButton.addEventListener("click", () => {
+  container.classList.remove("right-panel-active");
+});
+
+  </script>
+  <script src="scripti.js"></script>
+
+</body> 
+</html>
